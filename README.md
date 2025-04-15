@@ -7,10 +7,6 @@
 - other shortcuts (git operations, opening vim, docker, etc)
 - contains minimal vim config with shortcuts
 
-
-## Screenshots
-
-
 ## How to use
 1. Clone the repository.
 ```
