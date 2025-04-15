@@ -2,18 +2,6 @@
 
 set -e
 
-install_fzf(){
-    echo "installing fzf..."
-    if command -v fzf >/dev/null 2>&1; then
-        echo "fzf is already installed"
-    else
-            git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-        ~/.fzf/install --all
-        echo "fzf installed."
-    fi
-}
-
-
 backup_and_replace_bashrc() {
     echo "Backing up and replacing .bashrc..."
     cp ~/.bashrc ~/.bashrc.backup.$(date +%s)
@@ -28,9 +16,20 @@ backup_and_replace_vimrc() {
     echo ".vimrc has been replaced."
 }
 
-install_fzf
+set_terminal_opacity() {
+    echo "Setting terminal opacity to 0.90..."
+    PROFILE=$(dconf list /org/gnome/terminal/legacy/profiles:/ | head -n 1 | tr -d '/')
+    if [ -z "$PROFILE" ]; then
+        echo "No terminal profile found. Skipping opacity setting."
+    else
+        dconf write /org/gnome/terminal/legacy/profiles:/:$PROFILE/background-transparency-percent 10
+        echo "Terminal opacity set to 0.90."
+    fi
+}
+
 backup_and_replace_bashrc
 backup_and_replace_vimrc
+set_terminal_opacity
 
 echo "✅ Setup complete. Restart your terminal to apply changes."
 
