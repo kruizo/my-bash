@@ -2,10 +2,23 @@
 
 ## Features
 - with Fuzzy Search (Ctrl+Space)
-- Custom pronpt (with git)
-- Transparency effect on bash terminal
+- Custom prompt (with git)
+- Transparency effect on Ptyxis terminal
 - other shortcuts (git operations, opening vim, docker, etc)
 - contains minimal vim config with shortcuts
+
+## Newly Added Features
+
+- **Improved Fuzzy Search Navigation**  
+  - Open the fuzzy search menu anytime by pressing <kbd>Ctrl</kbd> + <kbd>Space</kbd>.  
+  - Use the **→ (Right Arrow)** to enter a directory, or **← (Left Arrow)** to go back.  
+  This makes file exploration smooth and fast — no need to type full paths!
+
+- **Quick Vim Access**  
+  - Press <kbd>Ctrl</kbd> + <kbd>e</kbd> in your terminal to instantly open **Vim**.  
+  - Inside Vim, press <kbd>Space</kbd> + <kbd>e</kbd> to **browse files and directories** seamlessly.
+
+---
 
 ## How to use
 1. Clone the repository.
