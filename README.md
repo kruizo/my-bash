@@ -9,9 +9,10 @@
 
 ## Newly Added Features
 
-- **Smart Directory Navigation in Fuzzy Search**  
-  Use the **→ (Right Arrow)** to dive into a selected directory, or **← (Left Arrow)** to go back.  
-  This makes searching and exploring files much faster and more intuitive.
+- **Improved Fuzzy Search Navigation**  
+  - Open the fuzzy search menu anytime by pressing <kbd>Ctrl</kbd> + <kbd>Space</kbd>.  
+  - Use the **→ (Right Arrow)** to enter a directory, or **← (Left Arrow)** to go back.  
+  This makes file exploration smooth and fast — no need to type full paths!
 
 - **Quick Vim Access**  
   - Press <kbd>Ctrl</kbd> + <kbd>e</kbd> in your terminal to instantly open **Vim**.  
