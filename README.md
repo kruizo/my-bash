@@ -2,8 +2,8 @@
 
 ## Features
 - with Fuzzy Search (Ctrl+Space)
-- Custom pronpt (with git)
-- Transparency effect on bash terminal
+- Custom prompt (with git)
+- Transparency effect on Ptyxis terminal
 - other shortcuts (git operations, opening vim, docker, etc)
 - contains minimal vim config with shortcuts
 
