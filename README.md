@@ -7,6 +7,18 @@
 - other shortcuts (git operations, opening vim, docker, etc)
 - contains minimal vim config with shortcuts
 
+## Newly Added Features
+
+- **Smart Directory Navigation in Fuzzy Search**  
+  Use the **→ (Right Arrow)** to dive into a selected directory, or **← (Left Arrow)** to go back.  
+  This makes searching and exploring files much faster and more intuitive.
+
+- **Quick Vim Access**  
+  - Press <kbd>Ctrl</kbd> + <kbd>e</kbd> in your terminal to instantly open **Vim**.  
+  - Inside Vim, press <kbd>Space</kbd> + <kbd>e</kbd> to **browse files and directories** seamlessly.
+
+---
+
 ## How to use
 1. Clone the repository.
 ```
