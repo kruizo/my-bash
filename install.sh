@@ -132,7 +132,8 @@ check_and_install_fzf_fd() {
             ;;
     esac
 }
-
+backup_and_replace_bashrc
+backup_and_replace_vimrc
 check_and_install_ptyxis
 set_terminal_opacity
 check_and_install_fzf_fd
